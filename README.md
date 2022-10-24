@@ -19,13 +19,13 @@ A fact table (songplays) is used together with dimension tables (users, songs, a
  
  •	start_time (TIMESTAMP) REFERENCES time (start_time) NOT NULL: beginning of user activity
  
- •	user_id (INT) RFERENCES users (user_id) NOT NULL: ID of user
+ •	user_id (INT) REFERENCES users (user_id) NOT NULL: ID of user
  
  •	level (VARCHAR): User level either free or paid
  
- •	song_id (VARCHAR) NOT NULL: ID of song played
+ •	song_id (VARCHAR): ID of song played
 
- •	artist_id (VARCHAR) NOT NULL: ID of the artist of the song played
+ •	artist_id (VARCHAR): ID of the artist of the song played
  
  •	session_id (INT): ID of the user session
  
@@ -37,7 +37,7 @@ A fact table (songplays) is used together with dimension tables (users, songs, a
 ![songplay](https://user-images.githubusercontent.com/116004104/197466106-40891804-4c14-40d1-87f0-80cdbd96c588.png)
 
  
-**DIMENSION TBALES**
+**DIMENSION TABLES**
 
 **songs** - songs in music database
 
