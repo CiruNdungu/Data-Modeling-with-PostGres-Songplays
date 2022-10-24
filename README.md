@@ -18,55 +18,88 @@ A fact table (songplays) is used together with dimension tables (users, songs, a
  •	start_time (TIMESTAMP) REFERENCES time (start_time) NOT NULL: beginning of user activity
  
  •	user_id (INT) RFERENCES users (user_id) NOT NULL: ID of user
+ 
  •	level (VARCHAR): User level either free or paid
+ 
  •	song_id (VARCHAR) NOT NULL: ID of song played
 
-•	artist_id (VARCHAR) NOT NULL: ID of the artist of the song played
-•	session_id (INT): ID of the user session
-•	location (VARCHAR): Location of the user
-•	user_agent (VARCHAR): Agent used by user to access the Sparkify platform
+ •	artist_id (VARCHAR) NOT NULL: ID of the artist of the song played
+ 
+ •	session_id (INT): ID of the user session
+ 
+ •	location (VARCHAR): Location of the user
+ 
+ •	user_agent (VARCHAR): Agent used by user to access the Sparkify platform
+ 
 
 ![songplay](https://user-images.githubusercontent.com/116004104/197466106-40891804-4c14-40d1-87f0-80cdbd96c588.png)
 
  
 **Dimension Tables**
+
 **songs** - songs in music database
-•	song_id (VARCHAR CONSTRAINT songs_pk) PRIMARY KEY: ID of Song
-•	title (VARCHAR) NOT NULL: Title of Song
-•	artist_id (VARCHAR) NOT NULL: ID of song Artist
-•	year (INT): Year of song release
-•	duration (FLOAT) NOT NULL: Duration of song in milliseconds
+
+ •	song_id (VARCHAR CONSTRAINT songs_pk) PRIMARY KEY: ID of Song
+
+ •	title (VARCHAR) NOT NULL: Title of Song
+
+ •	artist_id (VARCHAR) NOT NULL: ID of song Artist
+
+ •	year (INT): Year of song release
+
+ •	duration (FLOAT) NOT NULL: Duration of song in milliseconds
+
  
 ![songs](https://user-images.githubusercontent.com/116004104/197466129-a95aa62d-7568-4d90-805b-2cf0ccd0c219.png)
 
 
 
 **artists** - artists in music database
-•	artist_id (VARCHAR CONSTRAINT artists_pk) PRIMARY KEY: ID of the artist
-•	name (VARCHAR) NOT NULL: Artist’s name
-•	location (VARCHAR): Name of Artists city
-•	latitude (FLOAT): Latitude location of artist
-•	longitude (FLOAT): Longitude location of artist
+
+ •	artist_id (VARCHAR CONSTRAINT artists_pk) PRIMARY KEY: ID of the artist
+
+ •	name (VARCHAR) NOT NULL: Artist’s name
+
+ •	location (VARCHAR): Name of Artists city
+
+ •	latitude (FLOAT): Latitude location of artist
+
+ •	longitude (FLOAT): Longitude location of artist
+
  
 ![artists](https://user-images.githubusercontent.com/116004104/197466159-dbd2d61c-482b-48a9-b84d-c3c84d89e33a.png)
 
 **time** - timestamps of records in songplays 
-•	start_time (TIMESTAMP) PRIMARY KEY: Timestamp
-•	hour (SMALLINT) NOT NULL: Hour of start_time
-•	day (SMALLINT) NOT NULL: Day of start_time
-•	week (SMALLINT) NOT NULL: Week of year for start_time
-•	month (SMALLINT) NOT NULL: Month of start_time
-•	year (SMALLINT) NOT NULL: Year of start_time
-•	weekday (SMALLINT) NOT NULL: Name of weekday of start_time
+
+ •	start_time (TIMESTAMP) PRIMARY KEY: Timestamp
+
+ •	hour (SMALLINT) NOT NULL: Hour of start_time
+
+ •	day (SMALLINT) NOT NULL: Day of start_time
+
+ •	week (SMALLINT) NOT NULL: Week of year for start_time
+
+ •	month (SMALLINT) NOT NULL: Month of start_time
+
+ •	year (SMALLINT) NOT NULL: Year of start_time
+
+ •	weekday (SMALLINT) NOT NULL: Name of weekday of start_time
+
 
  ![time](https://user-images.githubusercontent.com/116004104/197466190-c7dd5084-cef2-4beb-b580-6986cb02c029.png)
 
 **users** - users in the app
-•	user_id (INT) CONSTRIANT users_pk PRIMARY KEY: ID of user
-•	first_name (VARCHAR): First name of user
-•	last_name (VARCHAR): Last Name of user
-•	gender (VARCHAR): users gender (M | F)
-•	level (VARCHAR): User level (free | paid)
+
+ •	user_id (INT) CONSTRIANT users_pk PRIMARY KEY: ID of user
+
+ •	first_name (VARCHAR): First name of user
+
+ •	last_name (VARCHAR): Last Name of user
+
+ •	gender (VARCHAR): users gender (M | F)
+
+ •	level (VARCHAR): User level (free | paid)
+
 
  ![users](https://user-images.githubusercontent.com/116004104/197466204-b593d7c2-3425-4a6b-a649-ad7b292f4706.png)
 
