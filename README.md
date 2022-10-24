@@ -14,7 +14,9 @@ A fact table (songplays) is used together with dimension tables (users, songs, a
 **songplays** - records in log data associated with song plays i.e. records with page NextSong
 
  •	songplay_id (SERIAL CONSTRAINT songplay_pk) PRIMARY KEY: ID of each song play
+ 
  •	start_time (TIMESTAMP) REFERENCES time (start_time) NOT NULL: beginning of user activity
+ 
  •	user_id (INT) RFERENCES users (user_id) NOT NULL: ID of user
  •	level (VARCHAR): User level either free or paid
  •	song_id (VARCHAR) NOT NULL: ID of song played
