@@ -4,6 +4,7 @@
 The purpose of the project is to write an ETL pipeline that transfers data from log files in JSON format and real data from the 'million song dataset', into Postgres database tables to allow effective data analysis by a music startup, Sparkify. This will allow Sparkify to gain insights into their user behaviors to improve their service to them.
 
 **SCHEMA**
+
 A fact table (songplays) is used together with dimension tables (users, songs, artists and time) to create a star schema optimized for queries for data analysis.
 
 ![image](https://user-images.githubusercontent.com/116004104/197465221-4a14d0d6-bb2c-4aa0-9004-1db8d3d71363.png)
@@ -108,7 +109,7 @@ A fact table (songplays) is used together with dimension tables (users, songs, a
 **ETL PIPELINE**
 
 ETL is performed on the files on the songs_data directory to create two dimension tables (songs and artists).
-We extracted data for the songs and artists table, using the columns as guided by the star schema.
+Data was extracted from the songs and artists table, using the columns as guided by the star schema.
 The data was then inserted into the respective tables using the queries on the sql_queries.py file.
 ETL was also performed on the log data directory to create the other dimension tables (time and users)
 The timestamp column was extracted from the 'time' table and was used to create the additional column as per the schema guide.
