@@ -7,7 +7,7 @@ The purpose of the project is to write an ETL pipeline that transfers data from 
 
 A fact table (songplays) is used together with dimension tables (users, songs, artists and time) to create a star schema optimized for queries for data analysis.
 
-![schema](https://user-images.githubusercontent.com/116004104/197519326-6265570e-6ee1-49dd-9cfd-02280db47810.jpeg)
+![schema](https://user-images.githubusercontent.com/116004104/197519555-02aa2e5b-267d-4a66-9bdd-6e504d0d2828.jpeg)
 
 
 **FACT TABLE**
