@@ -10,7 +10,8 @@ A fact table (songplays) is used together with dimension tables (users, songs, a
 
 
 
-**Fact Table**
+**FACT TABLE**
+
 **songplays** - records in log data associated with song plays i.e. records with page NextSong
 
  •	songplay_id (SERIAL CONSTRAINT songplay_pk) PRIMARY KEY: ID of each song play
@@ -35,7 +36,7 @@ A fact table (songplays) is used together with dimension tables (users, songs, a
 ![songplay](https://user-images.githubusercontent.com/116004104/197466106-40891804-4c14-40d1-87f0-80cdbd96c588.png)
 
  
-**Dimension Tables**
+**DIMENSION TBALES**
 
 **songs** - songs in music database
 
