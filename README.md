@@ -105,6 +105,7 @@ A fact table (songplays) is used together with dimension tables (users, songs, a
 
 
 **ETL PIPELINE**
+
 ETL is performed on the files on the songs_data directory to create two dimension tables (songs and artists).
 We extracted data for the songs and artists table, using the columns as guided by the star schema.
 The data was then inserted into the respective tables using the queries on the sql_queries.py file.
@@ -114,6 +115,7 @@ The appropriate columns were also extracted from the log files as per the star s
 The data was then loaded into the respective tables.
 
 **ETL procedure**
+
 1. Run the create_tables.py to create the database and the tables from the terminal
 2. Run test.ipynb to confirm creation of the tables with the correct columns.
 3. Run etl.ipynb to process a single file from song_data and log_data then load data onto the tables. Run etl.py to read and process the files from the song_data and log_data files and load the rest of the rows onto the tables.
@@ -121,6 +123,7 @@ The data was then loaded into the respective tables.
 
 
 **END**
+
 A postgres database with fact tables and dimension tables was created to perform song play anaysis and the data loaded successfully.
 
 
